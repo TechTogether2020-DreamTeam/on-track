@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// import {BannerNavigationComponent} from '../BannerNavigationComponent';
+import {
+    Button
+} from '@material-ui/core';
 import logo from '../../logo.svg';
 import './LandingPage.css';
 
@@ -10,7 +12,7 @@ export function LandingPage() {
                 <h1 className="landing-page-title">onTrack</h1>
                 <h2 className="landing-page-slogan">stay on track of all your tasks</h2>
                 <p className="description">break big tracks into small tasks and accomplish tasks one by one to finish your track</p>
-                <button>Get Started</button>
+                <Button variant="contained">Get Started</Button>
             </header>
             <div className="landing-page-image-wrapper">
                 <img src={logo} className="landing-page-image" alt="landing page logo"/>

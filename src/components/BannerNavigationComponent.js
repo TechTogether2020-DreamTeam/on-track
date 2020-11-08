@@ -2,8 +2,12 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
   } from 'react-router-dom';
+
+import {
+  Button,
+} from '@material-ui/core';
 
 import './BannerNavigationComponent.css';
 
@@ -13,10 +17,10 @@ export function BannerNavigationComponent() {
           <Link to="/">onTrack</Link>
           <div className="banner-buttons">
               <div className="banner-button-login">
-                  <button>log in</button>
+                  <Button variant="contained">log in</Button>
               </div>
               <div className="banner-button-signup">
-                  <button>sign up</button>
+                  <Button variant="contained">sign up</Button>
               </div>
           </div>
         </div>

@@ -1,0 +1,12 @@
+.dashboard-container {
+    display: flex;
+}
+
+.drawer-container {
+    width: 250px;
+    margin-right:50px;
+}
+
+.drawer-paper {
+    width: 250px;
+}
