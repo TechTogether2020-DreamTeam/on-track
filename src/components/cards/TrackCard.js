@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-export function TaskCard({id, name, timeRemaining, hasStartButton}) {
+export function TrackCard({status, name, hours, goal, hasStartButton}) {
 
     const classes = useStyles();
 
@@ -22,13 +22,16 @@ export function TaskCard({id, name, timeRemaining, hasStartButton}) {
         <Card className={classes.card}>
         <CardContent>
             <Typography className="card-task-status" color="textSecondary" gutterBottom>
-                {`#${id}`}
+                {status}
             </Typography>
             <Typography variant="h5" className="card-task-name" color="textPrimary" gutterBottom>
                 {name}
             </Typography>
             <Typography className="card-task-hours" color="textSecondary" gutterBottom>
-                {timeRemaining} minutes
+                Hours invested: {hours}
+                <Typography className="card-task-goal">
+                Completion Goal: {goal}
+            </Typography>
             </Typography>
         </CardContent>
         <CardActions>

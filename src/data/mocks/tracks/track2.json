@@ -1,0 +1,16 @@
+{
+    "name": "Paint Self-Portrait",
+    "status": "in progress",
+    "completedTasks": {
+
+    },
+    "createdTasks": {
+        "3": {
+            "name": "task1",
+            "timerOrigin": "25",
+            "timerSaved": "20"
+        }
+    },
+    "timeInvested": 3,
+    "completionGoal": "Nov 20th, 2020"
+}

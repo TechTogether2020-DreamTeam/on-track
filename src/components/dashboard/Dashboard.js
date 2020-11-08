@@ -7,7 +7,7 @@ import {
       DrawerNavigation,
 } from '../DrawerNavigation';
 import {TasksList} from './TasksList';
-import {TopTasksGrid} from './TopTasksGrid';
+import {TracksGrid} from './TracksGrid';
 import {TasksProgressList} from './TasksProgressList';
   import './Dashboard.css';
 
@@ -38,7 +38,7 @@ const classes = useStyles();
                   alignItems="center"
                   spacing={5}
                 >
-                    <TopTasksGrid/>
+                    <TracksGrid/>
                 </Grid>
 
                 <Grid

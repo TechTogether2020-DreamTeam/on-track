@@ -28,11 +28,20 @@ export function DrawerNavigation() {
                     <Divider />
                     <h1>Menu</h1>
                     <List>
-                        {['Dashboard', 'My Tracks', 'My Progress'].map((text, index) => (
+                        {/* {['Dashboard', 'My Tracks', 'My Progress'].map((text, index) => (
                             <ListItem button key={text}>
                             <ListItemText primary={text} />
                             </ListItem>
-                        ))}
+                        ))} */}
+                        <ListItem>
+                            <Link to='/dashboard'>Dashboard</Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link to='/mytracks'>My Tracks</Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link to='/myprogress'>My Progress</Link>
+                        </ListItem>
                     </List>
                 </Drawer>
             </nav>

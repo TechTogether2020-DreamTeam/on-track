@@ -4,13 +4,10 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import {ComponentForTesting} from './components/ComponentForTesting';
-import {
-  Home
-} from './components/Home';
 import {LandingPage} from './components/landing/LandingPage';
 import {BannerNavigationComponent} from './components/BannerNavigationComponent';
 import { Dashboard } from './components/dashboard/Dashboard';
+import { MyTracks } from './components/tracks/MyTracks';
 
 // Not needed - but leave for now for reference
 // import logo from './logo.svg';
@@ -30,6 +27,14 @@ function App() {
             <Switch>
               <Route path="/dashboard">
                 <Dashboard/>
+              </Route>
+
+              <Route path="/mytracks/:id">
+                <MyTracks/>
+              </Route>
+
+              <Route path="/mytracks">
+                <MyTracks/>
               </Route>
 
               <Route exact path="/">
