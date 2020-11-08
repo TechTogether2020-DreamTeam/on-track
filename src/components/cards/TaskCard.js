@@ -6,9 +6,20 @@ import {
     Typography
 } from '@material-ui/core';
 
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    card: {
+      width: '100%',
+    },
+  }));
+
 export function TaskCard({status, name, hours, goal, hasStartButton}) {
+
+    const classes = useStyles();
+
     return (
-        <Card>
+        <Card className={classes.card}>
         <CardContent>
             <Typography className="card-task-status" color="textSecondary" gutterBottom>
                 {status}

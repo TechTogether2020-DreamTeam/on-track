@@ -10,3 +10,29 @@
 .drawer-paper {
     width: 250px;
 }
+
+.dashboard-contents {
+    width: 100%;
+}
+
+.dashboard-tasks-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+/* .dashboard-tasks-upcoming-progress-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+} */
+
+/* .test {
+    height: 100px;
+} */
+
+/* .dashboard-upcoming-tasks-grid {
+    margin: 30px;
+} */

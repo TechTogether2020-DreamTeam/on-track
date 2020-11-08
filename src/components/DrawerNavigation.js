@@ -12,12 +12,6 @@ import {
     Link
   } from 'react-router-dom';
 
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import Inbox from '@material-ui/icons/Inbox';
-import Mail from '@material-ui/icons/Mail';
-
-
 import React, { useState, useEffect } from 'react';
 
 export function DrawerNavigation() {
