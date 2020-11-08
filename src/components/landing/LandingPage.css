@@ -1,0 +1,12 @@
+.landing-page-container {
+    display: flex;
+    justify-content: space-around;
+    height: '500px';
+}
+
+.landing-page-image-wrapper {
+}
+
+img.landing-page-image {
+    height: 150px;
+}

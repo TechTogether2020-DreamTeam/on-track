@@ -1,0 +1,35 @@
+{
+    "name": "Build a Website",
+    "status": "in progress",
+    "completedTasks": {
+        "4": {
+            "name": "task4",
+            "timerOrigin": "25",
+            "timerSaved": "20"
+        },
+        "5": {
+            "name": "task5",
+            "timerOrigin": "25",
+            "timerSaved": "20"
+        },
+        "6": {
+            "name": "task6",
+            "timerOrigin": "25",
+            "timerSaved": "20"
+        }
+    },
+    "createdTasks": {
+        "1": {
+            "name": "task1",
+            "timerOrigin": "25",
+            "timerSaved": "20"
+        },
+        "2": {
+            "name": "task2",
+            "timerOrigin": "25",
+            "timerSaved": "20"
+        }
+    },
+    "timeInvested": 15,
+    "completionGoal": "Jan 1st, 2020"
+}
