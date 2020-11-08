@@ -8,7 +8,9 @@ import {ComponentForTesting} from './components/ComponentForTesting';
 import {
   Home
 } from './components/Home';
-import {BannerNavigation, Navigation} from './components/BannerNavigation';
+import {LandingPage} from './components/landing/LandingPage';
+import {BannerNavigationComponent} from './components/BannerNavigationComponent';
+import { Dashboard } from './components/dashboard/Dashboard';
 
 // Not needed - but leave for now for reference
 // import logo from './logo.svg';
@@ -19,22 +21,22 @@ function App() {
   return (
     <Router>
       <div className="App">
-          <BannerNavigation/>
+          <BannerNavigationComponent/>
+          <main>
+            {// A switch is used for looking through Route component children
+            // It will render the first one it sees that matches the current URL
+            // If URL matches, render a specific React component
+            }
+            <Switch>
+              <Route path="/dashboard">
+                <Dashboard/>
+              </Route>
 
-        {// A switch is used for looking through Route component children
-        // It will render the first one it sees that matches the current URL
-        // If URL matches, render a specific React component
-        }
-        <Switch>
-          <Route path="/testscreen">
-            <ComponentForTesting/>
-          </Route>
-
-          <Route exact path="/">
-            <Home/>
-          </Route>
-        </Switch>
-
+              <Route exact path="/">
+                <LandingPage/>
+              </Route>
+            </Switch>
+          </main>
       </div>
     </Router>
   );
